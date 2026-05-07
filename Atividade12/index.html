@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Atividade 12</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+</head>
+<body>
+  <h1>Atividade 12</h1>
+
+  <div class="section">
+    <h2>1. Retângulo — Função Construtora</h2>
+    <label>Base (x)</label>
+    <input type="number" id="base" placeholder="Ex: 5">
+    <label>Altura (y)</label>
+    <input type="number" id="altura" placeholder="Ex: 3">
+    <button onclick="calcularArea()">Calcular Área</button>
+    <div class="result" id="res1"></div>
+  </div>
+
+  <div class="section">
+    <h2>2. Classes — Conta, Corrente e Poupança</h2>
+    <div class="tabs">
+      <div class="tab active" onclick="switchTab('corrente', this)">Conta Corrente</div>
+      <div class="tab" onclick="switchTab('poupanca', this)">Conta Poupança</div>
+    </div>
+
+    <div class="tab-content active" id="tab-corrente">
+      <label>Nome do Correntista</label>
+      <input type="text" id="c-nome" placeholder="Ex: João Silva">
+      <label>Banco</label>
+      <input type="text" id="c-banco" placeholder="Ex: Bradesco">
+      <label>Número da Conta</label>
+      <input type="text" id="c-numero" placeholder="Ex: 12345-6">
+      <label>Saldo (R$)</label>
+      <input type="number" id="c-saldo" placeholder="Ex: 1000">
+      <label>Saldo Especial (R$)</label>
+      <input type="number" id="c-saldoEsp" placeholder="Ex: 500">
+      <button onclick="criarCorrente()">Criar Objeto Corrente</button>
+      <div class="result" id="res2"></div>
+    </div>
+
+    <div class="tab-content" id="tab-poupanca">
+      <label>Nome do Correntista</label>
+      <input type="text" id="p-nome" placeholder="Ex: Maria Souza">
+      <label>Banco</label>
+      <input type="text" id="p-banco" placeholder="Ex: Itaú">
+      <label>Número da Conta</label>
+      <input type="text" id="p-numero" placeholder="Ex: 98765-4">
+      <label>Saldo (R$)</label>
+      <input type="number" id="p-saldo" placeholder="Ex: 2000">
+      <label>Juros (%)</label>
+      <input type="number" id="p-juros" placeholder="Ex: 0.5">
+      <label>Data de Vencimento</label>
+      <input type="date" id="p-vencimento">
+      <button onclick="criarPoupanca()">Criar Objeto Poupança</button>
+      <div class="result" id="res3"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
