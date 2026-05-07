@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 13 — Eventos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="background-blur"></div>
+
+  <div class="container">
+    <div class="card">
+
+      <div class="card-header">
+        <div class="dots">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <p class="subtitle">Passe o mouse • Clique para quebrar</p>
+      </div>
+
+      <h1 id="titulo">Abra a Janela</h1>
+      <p id="estado" class="estado fechada">🔒 Janela Fechada</p>
+
+      <div class="window-frame">
+        <img
+          id="janela"
+          src="janelaFechada.jpeg"
+          alt="Janela"
+          onmouseover="abrirJanela()"
+          onmouseout="fecharJanela()"
+          onclick="quebrarJanela()"
+        />
+        <div class="window-glow" id="glow"></div>
+      </div>
+
+      <div class="hint">
+        <span>🖱️ Hover</span>
+        <span class="sep">→</span>
+        <span>Abre</span>
+        <span class="sep">|</span>
+        <span>🖱️ Mouse out</span>
+        <span class="sep">→</span>
+        <span>Fecha</span>
+        <span class="sep">|</span>
+        <span>🖱️ Click</span>
+        <span class="sep">→</span>
+        <span>Quebra</span>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
