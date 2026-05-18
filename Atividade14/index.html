@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Transformar Textos</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonte Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Transformar Textos</h1>
+
+        <input type="text" id="texto" placeholder="Digite algo aqui...">
+
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="opcao" value="maiuscula">
+                MAIÚSCULAS
+            </label>
+
+            <label>
+                <input type="radio" name="opcao" value="minuscula">
+                minúsculas
+            </label>
+        </div>
+
+        <button onclick="transformarTexto()">Transformar</button>
+
+        <p id="resultado"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
