@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Formulário Principal</h1>
+
+        <form name="meuForm" onsubmit="return validarForm()">
+
+            <input type="text" name="nome" placeholder="Nome">
+
+            <input type="email" name="email" placeholder="Email">
+
+            <textarea name="comentario" placeholder="Comentário"></textarea>
+
+            <p class="pergunta">Primeira vez nesta página?</p>
+
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="pesquisa" value="sim"> Sim
+                </label>
+
+                <label>
+                    <input type="radio" name="pesquisa" value="nao"> Não
+                </label>
+            </div>
+
+            <div class="botoes">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
